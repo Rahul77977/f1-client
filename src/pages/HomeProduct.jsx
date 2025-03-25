@@ -174,7 +174,7 @@ const HomeProduct = () => {
   const getAllProducts = async (page) => {
     try {
       setLoading(true);
-      const response = await fetch(`https://food-5mu1.onrender.com/api/v1/product/product-list/${page}`);
+      const response = await fetch(`https://f1-server-1.onrender.com/api/v1/product/product-list/${page}`);
       const data = await response.json();
       if (data.success) {
         setProducts(data.products || []);
@@ -193,7 +193,7 @@ const HomeProduct = () => {
   const filterProducts = async () => {
     try {
       setLoading(true);
-      const response = await fetch('https://food-5mu1.onrender.com/api/v1/product/product-filters', {
+      const response = await fetch('https://f1-server-1.onrender.com/api/v1/product/product-filters', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
