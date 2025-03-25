@@ -1,0 +1,107 @@
+/* CreateCategory.css */
+
+.create-category-container {
+    margin-top: 2rem;
+  }
+  
+  .create-category-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .create-category-card-body {
+    padding: 2rem;
+  }
+  
+  .create-category-title {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .create-category-form {
+    margin-bottom: 2rem;
+  }
+  
+  .create-category-input,
+  .update-input {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    width: 100%;
+  }
+  
+  .create-category-button,
+  .update-button,
+  .action-button {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .create-category-button:hover,
+  .update-button:hover,
+  .action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .image-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 2px dashed #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .image-upload-label:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .cloud-upload-icon {
+    font-size: 48px;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hidden-file-input {
+    display: none;
+  }
+  
+  .image-preview {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  
+  .category-table {
+    margin-top: 2rem;
+  }
+  
+  .category-image {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .action-button {
+    width: auto;
+    margin-right:

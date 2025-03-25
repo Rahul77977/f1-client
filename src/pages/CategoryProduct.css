@@ -1,0 +1,251 @@
+.cat-prod-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cat-prod-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cat-prod-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cat-prod-results {
+  font-size: 1rem;
+  color: #666;
+}
+
+.cat-prod-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.cat-prod-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cat-prod-error, .cat-prod-no-results {
+  text-align: center;
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.cat-prod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cat-prod-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cat-prod-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cat-prod-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cat-prod-image-wrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.cat-prod-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cat-prod-card:hover .cat-prod-image {
+  transform: scale(1.1);
+}
+
+.cat-prod-no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f0f0f0;
+  color: #999;
+}
+
+.cat-prod-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(255, 77, 77, 0.3);
+}
+
+.cat-prod-info {
+  padding: 1.5rem;
+}
+
+.cat-prod-card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.cat-prod-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cat-prod-discounted {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.cat-prod-original {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.cat-prod-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cat-prod-stock {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.cat-prod-stock.in-stock {
+  color: #4caf50;
+}
+
+.cat-prod-stock.out-of-stock {
+  color: #ff4d4d;
+}
+
+.cat-prod-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.cat-prod-star {
+  color: #d4d4d4;
+}
+
+.cat-prod-star.filled {
+  color: #ffc107;
+}
+
+.cat-prod-add-to-cart {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cat-prod-add-to-cart:hover {
+  background-color: #0052a3;
+}
+
+.cat-prod-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .cat-prod-title {
+    font-size: 2rem;
+  }
+
+  .cat-prod-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-prod-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .cat-prod-title {
+    font-size: 1.5rem;
+  }
+
+  .cat-prod-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .cat-prod-image-wrapper {
+    height: 200px;
+  }
+
+  .cat-prod-card-title {
+    font-size: 1rem;
+  }
+
+  .cat-prod-discounted {
+    font-size: 1.2rem;
+  }
+
+  .cat-prod-original {
+    font-size: 0.9rem;
+  }
+
+  .cat-prod-add-to-cart {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

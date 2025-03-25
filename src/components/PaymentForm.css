@@ -1,0 +1,30 @@
+/* src/components/PaymentForm.css */
+.payment-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .payment-form h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  
+  .payment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .payment-form button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  

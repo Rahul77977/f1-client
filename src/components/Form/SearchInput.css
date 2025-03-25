@@ -1,0 +1,65 @@
+/* Basic styling for the search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Basic styling for the search form */
+.search-form {
+  display: flex;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+}
+
+/* Styling for the search input */
+.search-input {
+  flex: 1;
+  border-radius: 0;
+  border: 1px solid #ced4da; /* Adjust border color as needed */
+}
+
+/* Styling for the search button */
+.search-btn {
+  background-color: #007bff; /* Adjust as needed */
+  border: none;
+  color: white;
+  border-radius: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add a transition effect to the search button */
+.search-btn:hover {
+  background-color: #0056b3; /* Adjust as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  /* Ensure the search container is full-width on small screens */
+  .search-container {
+    padding: 0;
+  }
+
+  .search-form {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* Style the input for mobile */
+  .search-input {
+    border-radius: 0;
+    font-size: 16px; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
+  }
+
+  .search-btn {
+    padding: 0 10px; /* Adjust as needed */
+    font-size: 18px; /* Adjust as needed */
+  }
+}

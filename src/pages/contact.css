@@ -1,0 +1,55 @@
+/* contact.css */
+
+/* Ticker Animation Styles */
+.ticker {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .ticker-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+  }
+  @keyframes ticker {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Hover and Transition Effects */
+  .transition-hover:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ffcc00; /* Change highlight color as needed */
+  }
+  .card.transition-hover:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Get in Touch Title Styling */
+  .get-in-touch-title {
+    font-family: 'Playfair Display', serif; /* Use a stylish font (ensure you load this font in your index.html if needed) */
+    font-size: 2.75rem;
+    color: #e63946; /* Standout color for the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .get-in-touch-title:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  /* Contact List Styling */
+  .contact-list li {
+    font-family: 'Roboto', sans-serif; /* A clean, modern font */
+    font-size: 1.2rem;
+    color: #343a40;
+    transition: color 0.3s ease;
+  }
+  .contact-list li:hover {
+    color: #ffcc00;
+  }
+  

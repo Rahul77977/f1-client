@@ -1,0 +1,83 @@
+/* Reset container padding and margin */
+.container,
+.container-fluid,
+.full-width {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+
+/* Ensure the home container takes full width */
+.home-container {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Full-width product container */
+.rpc-product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .rpc-product-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .rpc-product-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rpc-product-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* Ensure sections take full width */
+.carousel-section,
+.categories-section,
+.featured-products-section,
+.promotional-section {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Adjust section title for full-width layout */
+.section-title {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Product card styles (unchanged, but included for completeness) */
+.rpc-product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.rpc-product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ... (rest of the product card styles remain unchanged) ... */

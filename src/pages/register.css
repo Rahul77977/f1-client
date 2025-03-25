@@ -1,0 +1,39 @@
+/* register.css */
+.container {
+  max-width: 800px; /* Adjust the max-width to increase the form's width */
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  color: #6c757d;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:disabled {
+  background-color: #b0bec5;
+  border-color: #b0bec5;
+}
+
+.spinner-border {
+  border-color: #007bff;
+}

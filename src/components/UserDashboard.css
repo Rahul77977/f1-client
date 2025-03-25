@@ -1,0 +1,50 @@
+/* UserDashboard.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .dashboard-header {
+    background-color: #f8f9fa; /* Light background for the header */
+    padding: 1rem;
+    border-bottom: 1px solid #e1e1e1; /* Subtle border for separation */
+    text-align: center;
+  }
+  
+  .dashboard-main {
+    display: flex;
+    flex: 1; /* Allows the main section to grow and fill the available space */
+  }
+  
+  .dashboard-sidebar {
+    background-color: #f1f1f1; /* Light background for the sidebar */
+    width: 200px; /* Fixed width for the sidebar */
+    padding: 1rem;
+    border-right: 1px solid #e1e1e1; /* Subtle border for separation */
+  }
+  
+  .dashboard-content {
+    flex: 1; /* Takes the remaining space */
+    padding: 1rem;
+  }
+  
+  .dashboard-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dashboard-sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-sidebar a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .dashboard-sidebar a:hover {
+    text-decoration: underline;
+  }
+  

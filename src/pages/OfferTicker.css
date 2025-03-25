@@ -1,0 +1,28 @@
+.offer-ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    /* background-color: #ffb6c1;  */
+    background-color: #dbdb52; 
+
+    padding: 10px 0;
+  }
+  
+  .offer-ticker {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+    color: #fff;             /* White text color */
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Keyframes for the scrolling effect */
+  @keyframes ticker {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
